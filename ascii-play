@@ -1,0 +1,10 @@
+#!/bin/bash
+#Description: Script that can convert images and videos into ASCII art and shows on terminal.
+#Author: Glaucia Lauton
+#Requirements: bash
+
+IMAGE=$1
+OUT=$2
+
+img2txt --width=50 --height=30 "${IMAGE}" > "${OUT}"
+cat "${OUT}"
